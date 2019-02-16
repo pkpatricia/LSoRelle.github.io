@@ -1,0 +1,125 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Weather Data Landing Page</title>
+    <link rel="stylesheet" href="styles.css">
+    <link rel="stylesheet" href="bootswatch.css">
+    <!-- Latest compiled and minified JavaScript -->
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js" integrity="sha384-Tc5IQib027qvyjSMfHjOMaLkfuWVxZxUPnCJA7l2mCWNIpG9mGCD8wGNIcPD7Txa" crossorigin="anonymous"></script>
+    <!-- jQuery (necessary for Bootstrap's JavaScript plugins) -->
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.12.4/jquery.min.js"></script>
+    <link href="https://stackpath.bootstrapcdn.com/bootswatch/4.2.1/slate/bootstrap.min.css" rel="stylesheet" integrity="sha384-jvsa5AujJxqzaYhQWMyOGNelM0rlTAvpVpU9zE8jwYi9dg9TdB7TzPUCLa+gLowa" crossorigin="anonymous">
+</head>
+<body>
+      <!-- Creates nav bar -->
+        <nav class="navbar navbar-expand-lg navbar-dark bg-primary">
+                <a class="navbar-brand" href="Landing.html">Weather Watch</a>
+                <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarColor01" aria-controls="navbarColor01" aria-expanded="false" aria-label="Toggle navigation">
+                  <span class="navbar-toggler-icon"></span>
+                </button>
+              
+                <div class="collapse navbar-collapse" id="navbarColor01">
+                  <ul class="navbar-nav ml-auto">
+                    <li class="nav-item dropdown show">
+                        <a class="nav-link dropdown-toggle" data-toggle="dropdown" role="button" aria-haspopup="true" aria-expanded="true">Plots</a>
+                        <div class="dropdown-menu show" x-placement="bottom-start" style="position: absolute; transform: translate3d(0px, 40px, 0px); top: 0px; left: 0px; will-change: transform;">
+                            <a class="dropdown-item" href="Cloudiness.html">Cloudiness</a>
+                            <a class="dropdown-item" href="Humidity.html">Humidity</a>
+                            <a class="dropdown-item" href="Temperature.html">Temperature</a>
+                            <a class="dropdown-item" href="WindSpeed.html">Wind Speed</a>
+                        </div>
+                    </li>
+                    <li class="nav-item">
+                      <a class="nav-link" href="Comparisons.html">Comparisons</a>
+                    </li>
+                    <li class="nav-item">
+                      <a class="nav-link" href="Data.html">Data</a>
+                  </ul>
+                </div>
+              </nav>
+  <!-- Creates the Overall Grid -->
+  <div class="container-fluid">
+    <section id="Welcome">
+        <!-- Row 1 -->
+        <div class="row">
+          <div class="col-sm-6 col-md-12">
+            <h1>Welcome to Weather Watch</h1>
+          </div>
+        </div>
+        <br>
+        <div class="row">
+                <div class="col-sm-2 col-md-4">
+                <br>
+                <p>
+                    We set out to prove if temperatures increase closer to the equator. On this site you will find various Plots comparing the same group of cities on the same day at the same time to various weather factors that influence the heat index to see if a pattern emerged. When the data was sampled it was winter in the northern hemisphere and summer in the southern hemisphere. (More data at different times of the year across several years would be useful to see if different patterns emerge.)
+                    <br> <br>
+                    The heat index, also known as the apparent temperature, is what the temperature feels like to the human body when relative humidity is combined with the air temperature. We also factored in cloudiness and wind speed to test if they contributed to what the temperature feels like to humans.
+                    <br> <br>
+                    The plot to the right is a representation of all cities sampled for this project with the color of their marker corresponding with the temperature, with green being cold, moving to yellow and then into red for hot. This graph does not represent the other heat index factors. 
+                </p>
+                </div>
+                <div class="col-sm-4 col-md-8">
+                        <div class="thumbnail">
+                        <a target="_blank" href="My Images/Latitude_Longitude.png">
+                            <img src="My Images/Latitude_Longitude.png" alt="World map made by ploting cities" style="width:80%">
+                          </a>
+                </div>
+              </div>
+            </section>
+          </div>
+        <br>
+        <div class="container">
+                <h3 class="text-center">Please click on the images below for more information</h3>
+                <div class="row">
+                  <div class="col-sm-3 col-md-6">
+                    <div class="thumbnail">
+                            <a target="_blank" href="Cloudiness.html">
+                      <img src="My Images/LatitudeVsCloudiness.png" alt="Plot of cities Latitude vs Cloudiness">
+                      <div class="Latitude">
+                      </div>
+                    </div>
+                  </div>
+                  <br>
+                  <div class="col-sm-3 col-md-6">
+                        <div class="thumbnail">
+                                <a target="_blank" href="Humidity.html">
+                          <img src="My Images/LatitudeVsHumidity.png" alt="Plot of cities Latitude vs Humidity">
+                          <div class="Latitude">
+                          </div>
+                        </div>
+                      </div>
+                </div>
+        </div>
+        <br>
+        <div class="container">
+                <div class="row">
+                  <div class="col-sm-3 col-md-6">
+                    <div class="thumbnail">
+                            <a target="_blank" href="Temperature.html">
+                      <img src="My Images/LatitudeVsTemperature.png" alt="Plot of cities Latitude vs Tempurature">
+                      <div class="Latitude">
+                      </div>
+                    </div>
+                  </div>
+                  <br>
+                  <div class="col-sm-3 col-md-6">
+                        <div class="thumbnail">
+                                <a target="_blank" href="WindSpeed.html">
+                          <img src="My Images/LatitudeVsWindSpeed.png" alt="Plot of cities Latitude vs Wind Speed">
+                          <div class="Latitude">
+                          </div>
+                        </div>
+                      </div>
+                </div>
+        </div>   
+    </div>        
+<!-- Latest compiled and minified JavaScript -->
+<script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js" integrity="sha384-Tc5IQib027qvyjSMfHjOMaLkfuWVxZxUPnCJA7l2mCWNIpG9mGCD8wGNIcPD7Txa" crossorigin="anonymous"></script>
+    <!-- jQuery (necessary for Bootstrap's JavaScript plugins) -->
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.12.4/jquery.min.js"></script>
+   
+</body>
+</html>
