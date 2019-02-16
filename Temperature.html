@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Weather Data Tempurature Page</title>
+    <link rel="stylesheet" href="styles.css">
+    <link rel="stylesheet" href="bootswatch.css">
+    <link href="https://stackpath.bootstrapcdn.com/bootswatch/4.2.1/slate/bootstrap.min.css" rel="stylesheet" integrity="sha384-jvsa5AujJxqzaYhQWMyOGNelM0rlTAvpVpU9zE8jwYi9dg9TdB7TzPUCLa+gLowa" crossorigin="anonymous">
+</head>
+<body>
+        <nav class="navbar navbar-expand-lg navbar-dark bg-primary">
+                <a class="navbar-brand" href="Landing.html">Weather Watch</a>
+                <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarColor01" aria-controls="navbarColor01" aria-expanded="false" aria-label="Toggle navigation">
+                  <span class="navbar-toggler-icon"></span>
+                </button>
+              
+                <div class="collapse navbar-collapse" id="navbarColor01">
+                  <ul class="navbar-nav ml-auto">
+                    <li class="nav-item dropdown show">
+                        <a class="nav-link dropdown-toggle" data-toggle="dropdown" role="button" aria-haspopup="true" aria-expanded="true">Plots</a>
+                        <div class="dropdown-menu show" x-placement="bottom-start" style="position: absolute; transform: translate3d(0px, 40px, 0px); top: 0px; left: 0px; will-change: transform;">
+                            <a class="dropdown-item" href="Cloudiness.html">Cloudiness</a>
+                            <a class="dropdown-item" href="Humidity.html">Humidity</a>
+                            <a class="dropdown-item" href="Temperature.html">Temperature</a>
+                            <a class="dropdown-item" href="WindSpeed.html">Wind Speed</a>
+                        </div>
+                    </li>
+                    <li class="nav-item">
+                      <a class="nav-link" href="Comparisons.html">Comparisons</a>
+                    </li>
+                    <li class="nav-item">
+                      <a class="nav-link" href="Data.html">Data</a>
+                  </ul>
+                </div>
+              </nav>
+              <h1>
+                Temperature and Latitude
+              </h1>          
+              <br>
+              <img src="My Images/LatitudeVsTemperature.png" alt="Plot of cities Latitude vs Tempurature" style="width:60%">
+              <br>
+              <br>
+              <br>
+              <div class="card text-white bg-secondary mb-3" style="max-width: 80rem;">
+                  <div class="card-header">Temperature</div>
+                  <div class="card-body">
+                    <h4 class="card-title">What Do The Plots About Temperature Tell Us?</h4>
+                    <p class="card-text">Temperature does seem to follow an arch as you move across the latitudes. The further north of the equator you move the lower the temperature becomes. However, below the equator you find that the general trend is cooler but not as steep of a curve as the temperatures from north of the equator. 
+                        <br><br>
+                        Part of what can explain this effect is the tilt of the Earth in relation to the Sun. When these samples were taken it was winter in the northern hemisphere and summer in the southern hemisphere.
+                        </p>
+    
+</body>
+</html>
